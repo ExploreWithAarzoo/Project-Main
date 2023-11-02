@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: lightgreen; */
+
+}
+
+.navbar {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+
+    width: 100%;
+
+    /* background-color: rgb(185, 225, 155); */
+}
+
+.logo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: crimson;
+    font-size: 8vh;
+    padding: 1vh 4vw;
+    font-family: 'Italianno', cursive;
+    font-weight: 800;
+    cursor: pointer;
+
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: row;
+    margin: 1vh 4vw;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-item li {
+    padding: 0.2vh 3vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5vh;
+}
+
+.nav-item li a:hover {
+    color: crimson;
+    transition: 0.5s;
+    /* font-weight: 800; */
+}
+
+.nav-item li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+i {
+    color: black;
+    font-size: 22px;
+}
+
+.btn {
+    /* border: 1px solid lightseagreen; */
+    background-color: lightslategray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.7vh;
+    padding: 1.5vh 4vh;
+    color: black;
+    cursor: pointer;
+    border-radius: 0.7vh;
+    margin-left: 3vh;
+}
+.btn:hover{
+    color: rgb(160, 23, 23);
+    background-color: #6283a4;
+
+}
+
+.content {
+    /* border: 1px solid black; */
+    height: 85vh;
+    padding: 0vh 3vw;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* background-color: aqua; */
+    justify-content: space-between;
+}
+
+.left {
+    /* background-color: brown; */
+    row-gap: 4vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    padding: 1vw;
+    /* text-align: justify; */
+    /* align-items: center; */
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    /* column-gap: 4vh; */
+}
+
+#content-image {
+    height: 40vw;
+    width: 50vw;
+}
+
+h2 {
+    font-size: 3vh;
+    line-height: 4vh;
+}
+
+p {
+
+    text-align: justify;
+}
+
+.btn-2 {
+    background-color: #778899;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4vh;
+    padding: 1.5vh 4vh;
+    color: black;
+    cursor: pointer;
+    border-radius: 0.7vh;
+    /* margin-left: 3vh; */
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-2:hover {
+    cursor: pointer;
+    /* color: blue; */
+    background-color: #6283a4;
+}
+
+#name {
+    color: crimson;
+    font-size: 04vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer {
+    /* width: 100%; */
+    background-color: lightslategray;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
+
+    align-items: center;
+    padding: 0px 4vw;
+    height: 10vh;
+    /* justify-content: center; */
+}
+
+#menu {
+    font-size: 28px;
+    font-weight: 800;
+    display: none;
+}
+.sc-media > i{
+    cursor: pointer;
+}
+.sc-media {
+    font-size: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    column-gap: 1vw;
+    /* justify-content: center; */
+}
+.text-footer{
+    font-size: 12px;
+}
+
+@media only screen and (max-width:600px) {
+    .navbar {
+        background-color: brown;
+    }
+
+    .item {
+        display: none;
+    }
+
+    #menu {
+        display: relative;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #menu {
+        display: flex;
+    }
+
+    .content {
+        flex-direction: column;
+        flex-wrap: 1;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .btn-2 {
+        width: 30vw;
+        font-size: 2vh;
+        justify-content: center;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+        /* padding: 0px 1vw; */
+        background-color: aliceblue;
+    }
+
+    .content {
+        padding: 05vh 4vw;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        /* flex-wrap: wrap; */
+        height: 80vh;
+    }
+
+    #content-image {
+        width: 90vw;
+        height: 30vh;
+    }
+
+    .footer {
+        /* padding: 2vw; */
+    }
+    .sc-media i{
+        font-size: 1.9vw;
+
+    }
+    .text-footer{
+        
+        font-size: 1.6vw;
+    }
+}
